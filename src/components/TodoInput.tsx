@@ -9,6 +9,7 @@ const TodoInput: React.FC<TodoInputProps> = ({ onAddTodo }) => {
 
   const handleAddTodo = () => {
     if (input.trim() === "") return;
+    console.log("Submitted Todo:", input);
     onAddTodo(input);
     setInput("");
   };
